@@ -1,0 +1,13 @@
+[package]
+name = "macroframe"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+macroquad = "0.4.4"
+macroquad-text = { git = "https://github.com/Ricky12Awesome/macroquad-text.git", branch = "colored_text" }
+
+[patch.crates-io]
+macroquad = { git = "https://github.com/SWCreeperKing/macroquad.git" }
