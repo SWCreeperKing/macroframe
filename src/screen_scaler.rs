@@ -1,5 +1,4 @@
 use macroquad::prelude::*;
-use std::cmp::*;
 
 pub struct ScreenScaler<T>
 where

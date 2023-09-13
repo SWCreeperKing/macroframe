@@ -1,9 +1,15 @@
-mod screen_scaler;
+pub mod screen_scaler;
+
+pub mod macroquad {
+    pub use ::macroquad::*;
+}
+
+pub mod macroquad_text {
+    pub use ::macroquad_text::*;
+}
 
 use macroquad::prelude::*;
-pub use macroquad::*;
 use macroquad_text::Fonts;
-pub use macroquad_text::*;
 
 pub trait DrawScaledText {
     fn draw_scaled_text(
